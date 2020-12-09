@@ -15,12 +15,12 @@ jobs:
         go-version: '1.14.0'
 
     - name: Run build
-      run: go build ./cmd
+      run: go build "./cmd"
 
-    - name: vet & lint
+    - name: Run vet & lint
       run: |
-        go vet ./cmd
-        golint ./cmd
+        go vet "./cmd"
+        golint "./cmd"
 
     - name: Run testing
       run: cd test && go test -v
