@@ -17,12 +17,6 @@ jobs:
     - name: Run build
       run: go build ./cmd/main.go
 
-    - name: Run vet
-      run: go vet "./cmd"
-    
-    - name: Run golangci-lint
-      uses: actions-contrib/golangci-lint@v1
-
     - name: Run testing
-      run: cd test && go test -v
+      run: go test -v ./cmd
       
