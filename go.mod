@@ -1,3 +1,3 @@
-module github.com/scottcalebc/go-grade-view
+module github.com/scottcalebc/gradeview
 
 go 1.13
